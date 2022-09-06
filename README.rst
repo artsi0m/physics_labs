@@ -9,13 +9,18 @@
 * Установить python3 c tkinter и git 
 * Клонировать данный репозиторий
 * В катологе с репозиторием создать venv, чтобы не засирать систему
+
 ``python3 -m venv env``
 `venv <https://docs.python.org/3/tutorial/venv.html>`_
+
 * Активировать venv, в статье выше это описано
 * Установить matplotlib
+
 ``python -m pip install matplotlib``
+
 * Отредактировать три листа 
 * Запустить скрипт 
+
 ``python3 thirdE3.py``
 
 К сожалению при написании мне было удобнее внести значения сразу в код,
