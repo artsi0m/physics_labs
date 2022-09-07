@@ -11,7 +11,8 @@
 * В катологе с репозиторием создать venv, чтобы не засирать систему
 
 ``python3 -m venv env``
-`venv <https://docs.python.org/3/tutorial/venv.html>`_
+
+`Что это такое и зачем <https://docs.python.org/3/tutorial/venv.html>`_
 
 * Активировать venv, в статье выше это описано
 * Установить matplotlib
