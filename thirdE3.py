@@ -32,9 +32,9 @@ def main():
     ay.set_title('Второе измерение')
 
     fig_third, az = plt.subplots()
-    az.plot(b_sum, b_third)
+    az.plot(b_sum)
+    az.plot(b_third)
     az.grid()
-    az.set_xlabel(r'Величина магнитной индукции, $Tл \times 10^{-5}$')
     az.set_ylabel(r'Величина магнитной индукции, $Tл \times 10^{-5}$')
     az.set_title('График алгебраической суммы проекций функций магнитных полей \n'
                  'и результирующего поля катушек \n', fontsize=10)
