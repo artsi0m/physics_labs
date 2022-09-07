@@ -2,13 +2,17 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy as np
 
-l_one_u = [ 56, 80, 104, 136, 184, 264, 368, 488, 600, 672 ]
-l_two_u = [ -696, -616, -504, - 376, -264, -200, -136, -104, -88, -72 ]
-l_combined_u = [ -624, -552, -408, -232, -104, 88, 224, 392, 544, 632 ]
 length_cm = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
 length_meters = [ x * pow(10, -2) for x in length_cm ]
 
+
+
 def main():
+
+    l_one_u = input_data(10, "U₁, десять значений через пробел: ")
+    l_two_u = input_data(10, "U₂, десять значений через пробел: ")
+    l_combined_u = input_data(10, "U рез, десять значений через пробел: ")
+
     b_one = [ calc(x) for x in l_one_u ]
     b_two = [ calc(x) for x in  l_two_u ]
     b_sum = [ x + y for x, y in zip(b_one, b_two)]
@@ -49,6 +53,15 @@ def calc(U):
     ratio = pow(10, 2) 
     return ((RES * C * U) / (N * S)) * ratio
 
+
+def input_data(num, prompt):
+    while True:
+       numbers = list(map(int, input(prompt).split()))
+       if len(numbers) == num:
+           break
+       else:
+           print("Вы должны ввести {} целых чисел".format(num))
+    return numbers
 
 if __name__ == "__main__":
     main()
